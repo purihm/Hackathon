@@ -1,5 +1,7 @@
 package com.example.hunai.hackathon;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
@@ -19,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    public Context cxt;
     float rainfall[]={98.8f, 123.8f, 161.6f, 24.2f, 52f, 58.2f, 35.4f};
     String monthNames[]={"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"};
     @Override
@@ -27,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupPieChart();
+
+        Button btn=(Button) findViewById(R.id.nextScreen);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, BubblePicker.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupPieChart() {
@@ -43,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
         chart.animateY(1000);
         chart.invalidate();
     }
-
 
 }
