@@ -8,32 +8,129 @@
     tools:context="com.example.hunai.hackathon.BubblePicker">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/button1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:background="@drawable/round_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text="hello"
-        android:textColor="#fff" />
+        android:text="Food-Groceries"
+        android:textColor="#fff"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/button12"
+        android:layout_alignParentStart="true" />
     <Button
         android:id="@+id/button2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:background="@drawable/round_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text="hello"
+        android:text="Eating Out"
         android:textColor="#fff"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/button"
         android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/button3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:background="@drawable/round_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text="hello"
+        android:text="Personal Hygeine"
         android:textColor="#fff"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/button2"
         android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Other"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignStart="@+id/button7" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Household"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignStart="@+id/button8" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Entertainment"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Alcohol"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignStart="@+id/button10" />
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Subscriptions"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button9"
+        android:layout_alignStart="@+id/button11" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="School/Office Supplies"
+        android:textColor="#fff"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Clothes"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button11"
+        android:layout_alignStart="@+id/button3" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Investments"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/button12"
+        android:layout_alignStart="@+id/button2" />
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Appliances"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/button9"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
+
