@@ -26,7 +26,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="Eating Out"
         android:textColor="#fff"
-        android:layout_alignTop="@+id/button"
+        android:layout_alignTop="@+id/button1"
         android:layout_centerHorizontal="true" />
     <Button
         android:id="@+id/button3"
