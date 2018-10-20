@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.example.hunai.hackathon"
@@ -28,4 +28,8 @@ dependencies {
 
 dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+}
+
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
 }
